@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_hospital"
+            android:icon="@drawable/ic_local_hospital_black_24dp"
+            android:title="Info RS Rujukan" />
+<!--        <item-->
+<!--            android:id="@+id/nav_gallery"-->
+<!--            android:icon="@drawable/ic_menu_gallery"-->
+<!--            android:title="@string/menu_gallery" />-->
+<!--        <item-->
+<!--            android:id="@+id/nav_slideshow"-->
+<!--            android:icon="@drawable/ic_menu_slideshow"-->
+<!--            android:title="@string/menu_slideshow" />-->
+<!--        <item-->
+<!--            android:id="@+id/nav_tools"-->
+<!--            android:icon="@drawable/ic_menu_manage"-->
+<!--            android:title="@string/menu_tools" />-->
+    </group>
+
+    <item android:title="Info COVID-19">
+        <menu>
+            <item
+                android:id="@+id/nav_symptom"
+                android:icon="@drawable/ic_accessibility_black_24dp"
+                android:title="Gejala" />
+            <item
+                android:id="@+id/nav_prevent"
+                android:icon="@drawable/ic_block_black_24dp"
+                android:title="Cara Pencegahan" />
+        </menu>
+    </item>
+
+    <item android:title="Misc">
+        <menu>
+            <item
+                android:id="@+id/nav_info"
+                android:icon="@drawable/ic_info_black_24dp"
+                android:title="Tentang Aplikasi" />
+        </menu>
+    </item>
+
+</menu>

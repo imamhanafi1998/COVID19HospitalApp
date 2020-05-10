@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_hospital">
+
+        <fragment
+            android:id="@+id/nav_hospital"
+            android:name="com.example.covid_19hospitalapp.ui.hospital.HospitalFragment"
+            android:label="Info RS Rujukan"
+            tools:layout="@layout/fragment_hospital" />
+
+        <fragment
+            android:id="@+id/nav_symptom"
+            android:name="com.example.covid_19hospitalapp.ui.symptom.SymptomFragment"
+            android:label="Gejala"
+            tools:layout="@layout/fragment_symptom" />
+
+        <fragment
+            android:id="@+id/nav_prevent"
+            android:name="com.example.covid_19hospitalapp.ui.prevent.PreventFragment"
+            android:label="Pencegahan"
+            tools:layout="@layout/fragment_prevent" />
+
+        <fragment
+            android:id="@+id/nav_info"
+            android:name="com.example.covid_19hospitalapp.ui.info.InfoFragment"
+            android:label="Tentang Aplikasi"
+            tools:layout="@layout/fragment_info" />
+
+<!--    <fragment-->
+<!--        android:id="@+id/nav_home"-->
+<!--        android:name="com.example.covid_19hospitalapp.ui.home.HomeFragment"-->
+<!--        android:label="@string/menu_home"-->
+<!--        tools:layout="@layout/fragment_home" />-->
+
+<!--    <fragment-->
+<!--        android:id="@+id/nav_gallery"-->
+<!--        android:name="com.example.covid_19hospitalapp.ui.gallery.GalleryFragment"-->
+<!--        android:label="@string/menu_gallery"-->
+<!--        tools:layout="@layout/fragment_gallery" />-->
+
+<!--    <fragment-->
+<!--        android:id="@+id/nav_slideshow"-->
+<!--        android:name="com.example.covid_19hospitalapp.ui.slideshow.SlideshowFragment"-->
+<!--        android:label="@string/menu_slideshow"-->
+<!--        tools:layout="@layout/fragment_slideshow" />-->
+
+<!--    <fragment-->
+<!--        android:id="@+id/nav_tools"-->
+<!--        android:name="com.example.covid_19hospitalapp.ui.tools.ToolsFragment"-->
+<!--        android:label="@string/menu_tools"-->
+<!--        tools:layout="@layout/fragment_tools" />-->
+
+<!--    <fragment-->
+<!--        android:id="@+id/nav_share"-->
+<!--        android:name="com.example.covid_19hospitalapp.ui.share.ShareFragment"-->
+<!--        android:label="@string/menu_share"-->
+<!--        tools:layout="@layout/fragment_share" />-->
+
+<!--    <fragment-->
+<!--        android:id="@+id/nav_send"-->
+<!--        android:name="com.example.covid_19hospitalapp.ui.send.SendFragment"-->
+<!--        android:label="@string/menu_send"-->
+<!--        tools:layout="@layout/fragment_send" />-->
+</navigation>
