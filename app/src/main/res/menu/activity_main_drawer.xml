@@ -7,7 +7,7 @@
         <item
             android:id="@+id/nav_hospital"
             android:icon="@drawable/ic_local_hospital_black_24dp"
-            android:title="Info RS Rujukan" />
+            android:title="Daftar RS Rujukan" />
     </group>
 
     <item android:title="Info COVID-19">
