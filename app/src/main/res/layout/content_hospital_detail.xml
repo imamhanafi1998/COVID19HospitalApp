@@ -18,7 +18,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:src="@drawable/ic_launcher_foreground" />
+        android:src="@drawable/ic_menu_gallery" />
 
     <TextView
         android:id="@+id/hospitalNameDetail"
@@ -30,9 +30,9 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginHorizontal="36dp"
         android:layout_marginTop="32dp"
-        android:textSize="24sp"
+        android:textSize="18sp"
         android:ellipsize="end"
-        android:maxLines="3" />
+        android:maxLines="2" />
 
     <TextView
         android:id="@+id/hospitalAddressDetail"
@@ -44,7 +44,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginHorizontal="36dp"
         android:layout_marginTop="16dp"
-        android:textSize="24sp" />
+        android:textSize="18sp" />
 
     <TextView
         android:id="@+id/hospitalContactDetail"
@@ -56,7 +56,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginHorizontal="36dp"
         android:layout_marginTop="16dp"
-        android:textSize="24sp" />
+        android:textSize="18sp" />
 
     <TextView
         android:id="@+id/hospitalWebDetail"
@@ -68,7 +68,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginHorizontal="36dp"
         android:layout_marginTop="16dp"
-        android:textSize="24sp" />
+        android:textSize="18sp" />
 
     <TextView
         android:id="@+id/hospitalMapDetail"
@@ -80,6 +80,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginHorizontal="36dp"
         android:layout_marginTop="16dp"
-        android:textSize="24sp" />
+        android:textSize="18sp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

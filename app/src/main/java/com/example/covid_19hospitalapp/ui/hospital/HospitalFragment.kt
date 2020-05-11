@@ -40,6 +40,7 @@ class HospitalFragment : Fragment() {
 
     private fun hospitalItemClicked(hospitalData: HospitalData) {
         val showDetailActivity = Intent(context, HospitalDetailActivity::class.java)
+        showDetailActivity.putExtra(Intent.EXTRA_SPLIT_NAME, hospitalData.hospitalPhoto.toString())
         showDetailActivity.putExtra(Intent.EXTRA_COMPONENT_NAME, hospitalData.hospitalName.toString())
         showDetailActivity.putExtra(Intent.EXTRA_INSTALLER_PACKAGE_NAME, hospitalData.hospitalAddress.toString())
         showDetailActivity.putExtra(Intent.EXTRA_PACKAGE_NAME, hospitalData.hospitalContact.toString())
@@ -50,12 +51,15 @@ class HospitalFragment : Fragment() {
 
     private fun createHospitalData() : List<HospitalData> {
         val partList = ArrayList<HospitalData>()
-        partList.add(HospitalData("RS Dr. Soetomo 1", "Kota Surabaya 1", "03131310001", "www.example1.com", "123-321"))
-        partList.add(HospitalData("RS Dr. Soetomo 2", "Kota Surabaya 2", "03131310002", "www.example2.com", "123-322"))
-        partList.add(HospitalData("RS Dr. Soetomo 3", "Kota Surabaya 3", "03131310003", "www.example3.com", "123-323"))
-        partList.add(HospitalData("RS Dr. Soetomo 4", "Kota Surabaya 4", "03131310004", "www.example4.com", "123-324"))
-        partList.add(HospitalData("RS Dr. Soetomo 5", "Kota Surabaya 5", "03131310005", "www.example5.com", "123-325"))
-        partList.add(HospitalData("RS Dr. Soetomo 6", "Kota Surabaya 6", "03131310006", "www.example6.com", "123-326"))
+        partList.add(HospitalData(R.drawable.rs1, "RSUD Dr. Soetomo", "Kota Surabaya", "0315501078", "http://rsudrsoetomo.jatimprov.go.id/", "123-321"))
+        partList.add(HospitalData(R.drawable.rs2, "Rumah Sakit Khusus Infeksi Universitas Airlangga", "Kota Surabaya", "0315961389", "https://rumahsakit.unair.ac.id/", "123-322"))
+        partList.add(HospitalData(R.drawable.rs3, "Rumah Sakit Umum Daerah Sidoarjo", "Kabupaten Sidoarjo", "0318961649", "http://rsd.sidoarjokab.go.id/", "123-323"))
+        partList.add(HospitalData(R.drawable.rs4, "RSUD Dr. Saiful Anwar Malang", "Kota Malang", "0341362101", "https://rsusaifulanwar.jatimprov.go.id/", "123-324"))
+        partList.add(HospitalData(R.drawable.rs5, "RSUD Kabupaten Kediri", "Kota Kediri", "0354391718", "https://rsud.kedirikab.go.id/", "123-325"))
+        partList.add(HospitalData(R.drawable.rs6, "RSUD Dr. R. KOESMA Tuban", "Kabupaten Tuban", "0356321010", "https://rsudkoesma.id/", "123-326"))
+        partList.add(HospitalData(R.drawable.rs7, "RSUD Dr R. Sosodoro Djatikoesoemo Bojonegoro", "Kabupaten Bojonegoro", "03533412133", "https://www.rssosodoro.com/", "123-327"))
+        partList.add(HospitalData(R.drawable.rs8, "RSUD Dr. Iskak Kab. Tulungagung", "Kabupaten Tulungagung", "0355322609", "https://rsudtulungagung.com/", "123-328"))
+        partList.add(HospitalData(R.drawable.rs9, "RSUD Dr.Soedono Madiun", "Kota Madiun", "0351454657", "https://rssoedono.jatimprov.go.id/", "123-329"))
         return partList
     }
 }

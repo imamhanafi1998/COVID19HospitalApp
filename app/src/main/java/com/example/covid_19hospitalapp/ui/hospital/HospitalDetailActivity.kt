@@ -38,11 +38,13 @@ class HospitalDetailActivity : AppCompatActivity() {
     }
 
     private fun putData(intentThatStartedThisActivity : Intent) {
-        var name = intentThatStartedThisActivity.getStringExtra((Intent.EXTRA_COMPONENT_NAME))
-        var address = intentThatStartedThisActivity.getStringExtra((Intent.EXTRA_INSTALLER_PACKAGE_NAME))
-        var contact = intentThatStartedThisActivity.getStringExtra((Intent.EXTRA_PACKAGE_NAME))
-        var web = intentThatStartedThisActivity.getStringExtra((Intent.EXTRA_REFERRER_NAME))
-        var map = intentThatStartedThisActivity.getStringExtra((Intent.EXTRA_REFERRER))
+        var photo = intentThatStartedThisActivity.getStringExtra(Intent.EXTRA_SPLIT_NAME).toInt()
+        var name = intentThatStartedThisActivity.getStringExtra(Intent.EXTRA_COMPONENT_NAME)
+        var address = intentThatStartedThisActivity.getStringExtra(Intent.EXTRA_INSTALLER_PACKAGE_NAME)
+        var contact = intentThatStartedThisActivity.getStringExtra(Intent.EXTRA_PACKAGE_NAME)
+        var web = intentThatStartedThisActivity.getStringExtra(Intent.EXTRA_REFERRER_NAME)
+        var map = intentThatStartedThisActivity.getStringExtra(Intent.EXTRA_REFERRER)
+        hospitalPhotoDetail.setImageResource(photo)
         hospitalNameDetail.text = name
         hospitalAddressDetail.text = address
         hospitalContactDetail.text = contact
