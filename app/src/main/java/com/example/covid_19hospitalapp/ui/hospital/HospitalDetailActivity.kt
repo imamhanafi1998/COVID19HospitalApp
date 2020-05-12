@@ -48,9 +48,13 @@ class HospitalDetailActivity : AppCompatActivity() {
         hospitalPhotoDetail.setImageResource(photo)
         hospitalNameDetail.text = name
         hospitalAddressDetail.text = address
-        hospitalContactDetail.text = contact
+//        hospitalContactDetail.text = contact
 //        hospitalWebDetail.text = web
 //        hospitalMapDetail.text = map
+
+        buttonCall.setOnClickListener {
+            call(contact)
+        }
 
         buttonWeb.setOnClickListener {
             openWeb(web)
@@ -61,6 +65,12 @@ class HospitalDetailActivity : AppCompatActivity() {
         val showWebActivity = Intent(this, HospitalWeb::class.java)
         showWebActivity.putExtra(Intent.ACTION_WEB_SEARCH, url)
         startActivity(showWebActivity)
+    }
+
+    private fun call (number: String) {
+        val callThis = Intent(Intent.ACTION_DIAL)
+        callThis.setData(Uri.parse("tel:"+ number))
+        startActivity(callThis)
     }
 
 }

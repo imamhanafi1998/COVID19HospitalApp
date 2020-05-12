@@ -146,14 +146,23 @@
                 android:layout_marginTop="32dp"
                 android:textSize="14sp" />
 
-            <TextView
-                android:id="@+id/hospitalContactDetail"
-                android:layout_width="match_parent"
+<!--            <TextView-->
+<!--                android:id="@+id/hospitalContactDetail"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginHorizontal="36dp"-->
+<!--                android:layout_marginTop="6dp"-->
+<!--                android:text="03131319090"-->
+<!--                android:textSize="18sp" />-->
+
+            <Button
+                android:id="@+id/buttonCall"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginHorizontal="36dp"
+                android:layout_marginStart="36dp"
                 android:layout_marginTop="6dp"
-                android:text="03131319090"
-                android:textSize="18sp" />
+                android:text="Telepon"
+                android:textSize="14sp" />
 
             <TextView
                 android:layout_width="match_parent"
