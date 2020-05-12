@@ -7,12 +7,13 @@ import com.example.covid_19hospitalapp.R
 
 import android.content.Intent
 import android.net.Uri
+import android.text.Spannable
+import android.text.SpannableString
+import android.text.style.BackgroundColorSpan
 
 
 import kotlinx.android.synthetic.main.activity_hospital_detail.*
 import kotlinx.android.synthetic.main.content_hospital_detail.*
-//import kotlinx.android.synthetic.main.content_hospital_detail.*
-import kotlinx.android.synthetic.main.hospital_list_item.*
 
 class HospitalDetailActivity : AppCompatActivity() {
 
@@ -48,8 +49,18 @@ class HospitalDetailActivity : AppCompatActivity() {
         hospitalNameDetail.text = name
         hospitalAddressDetail.text = address
         hospitalContactDetail.text = contact
-        hospitalWebDetail.text = web
-        hospitalMapDetail.text = map
+//        hospitalWebDetail.text = web
+//        hospitalMapDetail.text = map
+
+        buttonWeb.setOnClickListener {
+            openWeb(web)
+        }
+    }
+
+    private fun openWeb(url: String) {
+        val showWebActivity = Intent(this, HospitalWeb::class.java)
+        showWebActivity.putExtra(Intent.ACTION_WEB_SEARCH, url)
+        startActivity(showWebActivity)
     }
 
 }

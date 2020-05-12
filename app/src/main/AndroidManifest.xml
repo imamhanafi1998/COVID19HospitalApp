@@ -28,6 +28,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity android:name=".ui.hospital.HospitalWeb"
+            android:label="Website RS"
+            android:parentActivityName=".ui.hospital.HospitalDetailActivity">
+
+        </activity>
+
     </application>
+
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
 
 </manifest>

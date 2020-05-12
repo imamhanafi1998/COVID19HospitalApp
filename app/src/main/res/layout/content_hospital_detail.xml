@@ -163,16 +163,24 @@
                 android:layout_marginTop="32dp"
                 android:textSize="14sp" />
 
-            <TextView
-                android:id="@+id/hospitalWebDetail"
+<!--            <TextView-->
+<!--                android:id="@+id/hospitalWebDetail"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginHorizontal="36dp"-->
+<!--                android:layout_marginTop="6dp"-->
+<!--                android:text="https://example.com/"-->
+<!--                android:textColor="#FFFFFF"-->
+<!--                android:textSize="18sp" />-->
+
+            <Button
+                android:id="@+id/buttonWeb"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginHorizontal="36dp"
+                android:layout_marginStart="36dp"
                 android:layout_marginTop="6dp"
-                android:background="@android:color/holo_blue_light"
-                android:text="https://example.com/"
-                android:textColor="#FFFFFF"
-                android:textSize="18sp" />
+                android:text="Buka Website"
+                android:textSize="14sp" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -182,17 +190,26 @@
                 android:layout_marginTop="32dp"
                 android:textSize="14sp" />
 
-            <TextView
-                android:id="@+id/hospitalMapDetail"
+<!--            <TextView-->
+<!--                android:id="@+id/hospitalMapDetail"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginHorizontal="36dp"-->
+<!--                android:layout_marginTop="6dp"-->
+<!--                android:textColor="#FFFFFF"-->
+<!--                android:text="123-321"-->
+<!--                android:textSize="18sp"-->
+<!--                android:layout_marginBottom="32dp" />-->
+
+            <Button
+                android:id="@+id/buttonMap"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginHorizontal="36dp"
+                android:layout_marginStart="36dp"
                 android:layout_marginTop="6dp"
-                android:background="@android:color/holo_blue_light"
-                android:textColor="#FFFFFF"
-                android:text="123-321"
-                android:textSize="18sp"
-                android:layout_marginBottom="32dp" />
+                android:layout_marginBottom="32dp"
+                android:text="Buka Peta"
+                android:textSize="14sp" />
 
         </LinearLayout>
 
