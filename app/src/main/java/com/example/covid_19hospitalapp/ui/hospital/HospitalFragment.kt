@@ -45,21 +45,32 @@ class HospitalFragment : Fragment() {
         showDetailActivity.putExtra(Intent.EXTRA_INSTALLER_PACKAGE_NAME, hospitalData.hospitalAddress.toString())
         showDetailActivity.putExtra(Intent.EXTRA_PACKAGE_NAME, hospitalData.hospitalContact.toString())
         showDetailActivity.putExtra(Intent.EXTRA_REFERRER_NAME, hospitalData.hospitalWeb.toString())
-        showDetailActivity.putExtra(Intent.EXTRA_REFERRER, hospitalData.hospitalMap.toString())
+        showDetailActivity.putExtra(Intent.EXTRA_REFERRER, hospitalData.hospitalMapLat.toString())
+        showDetailActivity.putExtra(Intent.EXTRA_BCC, hospitalData.hospitalMapLong.toString())
         startActivity(showDetailActivity)
     }
 
     private fun createHospitalData() : List<HospitalData> {
         val partList = ArrayList<HospitalData>()
-        partList.add(HospitalData(R.drawable.rs1, "RSUD Dr. Soetomo", "Kota Surabaya", "0315501078", "http://rsudrsoetomo.jatimprov.go.id/", "123-321"))
-        partList.add(HospitalData(R.drawable.rs2, "Rumah Sakit Khusus Infeksi Universitas Airlangga", "Kota Surabaya", "0315961389", "https://rumahsakit.unair.ac.id/", "123-322"))
-        partList.add(HospitalData(R.drawable.rs3, "Rumah Sakit Umum Daerah Sidoarjo", "Kabupaten Sidoarjo", "0318961649", "http://rsd.sidoarjokab.go.id/", "123-323"))
-        partList.add(HospitalData(R.drawable.rs4, "RSUD Dr. Saiful Anwar Malang", "Kota Malang", "0341362101", "https://rsusaifulanwar.jatimprov.go.id/", "123-324"))
-        partList.add(HospitalData(R.drawable.rs5, "RSUD Kabupaten Kediri", "Kota Kediri", "0354391718", "https://rsud.kedirikab.go.id/", "123-325"))
-        partList.add(HospitalData(R.drawable.rs6, "RSUD Dr. R. KOESMA Tuban", "Kabupaten Tuban", "0356321010", "https://rsudkoesma.id/", "123-326"))
-        partList.add(HospitalData(R.drawable.rs7, "RSUD Dr R. Sosodoro Djatikoesoemo Bojonegoro", "Kabupaten Bojonegoro", "03533412133", "https://www.rssosodoro.com/", "123-327"))
-        partList.add(HospitalData(R.drawable.rs8, "RSUD Dr. Iskak Kab. Tulungagung", "Kabupaten Tulungagung", "0355322609", "https://rsudtulungagung.com/", "123-328"))
-        partList.add(HospitalData(R.drawable.rs9, "RSUD Dr.Soedono Madiun", "Kota Madiun", "0351454657", "https://rssoedono.jatimprov.go.id/", "123-329"))
+        partList.add(HospitalData(R.drawable.rs1, "RSUD Dr. Soetomo", "Kota Surabaya", "0315501078", "http://rsudrsoetomo.jatimprov.go.id/", "-7.268021", "112.758500"))
+        partList.add(HospitalData(R.drawable.rs2, "Rumah Sakit Khusus Infeksi Universitas Airlangga", "Kota Surabaya", "0315961389", "https://rumahsakit.unair.ac.id/", "-7.270191", "112.786139"))
+        partList.add(HospitalData(R.drawable.rs3, "Rumah Sakit Umum Daerah Sidoarjo", "Kabupaten Sidoarjo", "0318961649", "http://rsd.sidoarjokab.go.id/", "-7.465429", "112.716379"))
+        partList.add(HospitalData(R.drawable.rs4, "RSUD Dr. Saiful Anwar Malang", "Kota Malang", "0341362101", "https://rsusaifulanwar.jatimprov.go.id/", "-7.972562", "112.631550"))
+        partList.add(HospitalData(R.drawable.rs5, "RSUD Kabupaten Kediri", "Kota Kediri", "0354391718", "https://rsud.kedirikab.go.id/", "-7.759709", "112.176110"))
+        partList.add(HospitalData(R.drawable.rs6, "RSUD Dr. R. KOESMA Tuban", "Kabupaten Tuban", "0356321010", "https://rsudkoesma.id/", "-6.898737", "112.046514"))
+        partList.add(HospitalData(R.drawable.rs7, "RSUD Dr R. Sosodoro Djatikoesoemo Bojonegoro", "Kabupaten Bojonegoro", "03533412133", "https://www.rssosodoro.com/", "-7.159506", "111.899632"))
+        partList.add(HospitalData(R.drawable.rs8, "RSUD Dr. Iskak Kab. Tulungagung", "Kabupaten Tulungagung", "0355322609", "https://rsudtulungagung.com/", "-8.054871", "111.918112"))
+        partList.add(HospitalData(R.drawable.rs9, "RSUD Dr.Soedono Madiun", "Kota Madiun", "0351454657", "https://rssoedono.jatimprov.go.id/", "-7.626299", "111.524001"))
+        // "-7.268021", "112.758500"
+        // "-7.270191", "112.786139"
+        // "-7.465429", "112.716379"
+        // "-7.972562", "112.631550"
+        // "-7.759709", "112.176110"
+        // "-6.898737", "112.046514"
+        // "-7.159506", "111.899632"
+        // "-8.054871", "111.918112"
+        // "-7.626299", "111.524001"
+        
         return partList
     }
 }

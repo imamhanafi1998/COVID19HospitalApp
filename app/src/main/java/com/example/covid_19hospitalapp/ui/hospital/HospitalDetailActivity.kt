@@ -10,6 +10,7 @@ import android.net.Uri
 import android.text.Spannable
 import android.text.SpannableString
 import android.text.style.BackgroundColorSpan
+import android.widget.Toast
 
 
 import kotlinx.android.synthetic.main.activity_hospital_detail.*
@@ -28,7 +29,7 @@ class HospitalDetailActivity : AppCompatActivity() {
 //            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
 //                .setAction("Action", null).show()
 //        }
-        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        supportActionBar?.setDisplayHomeAsUpEnabled(false)
 
 //        sss
         var intentThatStartedThisActivity = intent
@@ -44,13 +45,18 @@ class HospitalDetailActivity : AppCompatActivity() {
         var address = intentThatStartedThisActivity.getStringExtra(Intent.EXTRA_INSTALLER_PACKAGE_NAME)
         var contact = intentThatStartedThisActivity.getStringExtra(Intent.EXTRA_PACKAGE_NAME)
         var web = intentThatStartedThisActivity.getStringExtra(Intent.EXTRA_REFERRER_NAME)
-        var map = intentThatStartedThisActivity.getStringExtra(Intent.EXTRA_REFERRER)
+        var mapLat = intentThatStartedThisActivity.getStringExtra(Intent.EXTRA_REFERRER)
+        var mapLong = intentThatStartedThisActivity.getStringExtra(Intent.EXTRA_BCC)
         hospitalPhotoDetail.setImageResource(photo)
         hospitalNameDetail.text = name
         hospitalAddressDetail.text = address
 //        hospitalContactDetail.text = contact
 //        hospitalWebDetail.text = web
 //        hospitalMapDetail.text = map
+
+        buttonMap.setOnClickListener {
+            openMap(mapLat, mapLong, name)
+        }
 
         buttonCall.setOnClickListener {
             call(contact)
@@ -59,6 +65,15 @@ class HospitalDetailActivity : AppCompatActivity() {
         buttonWeb.setOnClickListener {
             openWeb(web)
         }
+    }
+
+    private fun openMap(latitude: String, longitude: String, hospitalName: String) {
+        val showMapActivity = Intent(this, HospitalMapsActivity::class.java)
+        showMapActivity.putExtra(Intent.ACTION_ASSIST, latitude)
+        showMapActivity.putExtra(Intent.ACTION_PICK, longitude)
+        showMapActivity.putExtra(Intent.ACTION_APPLICATION_PREFERENCES, hospitalName)
+
+        startActivity(showMapActivity)
     }
 
     private fun openWeb(url: String) {

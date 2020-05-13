@@ -8,6 +8,7 @@ import android.webkit.WebChromeClient
 import android.webkit.WebView
 import android.webkit.WebViewClient
 import android.widget.Toast
+import androidx.appcompat.app.ActionBar
 import androidx.appcompat.app.AppCompatActivity
 import com.example.covid_19hospitalapp.R
 import kotlinx.android.synthetic.main.hospital_web.*
@@ -21,6 +22,9 @@ class HospitalWeb : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.hospital_web)
         val webView = findViewById<WebView>(R.id.hospitalWeb)
+
+        actionBar?.setDisplayHomeAsUpEnabled(false)
+
         var intentThatStartedThisActivity = intent
 
         if(intentThatStartedThisActivity.hasExtra(Intent.ACTION_WEB_SEARCH)) {
@@ -50,6 +54,8 @@ class HospitalWeb : AppCompatActivity() {
                 }
             }
             webView.loadUrl(hospitalWeb)
+        } else {
+//            Toast.makeText(this@HospitalWeb, "Intent bug, harap kembali ke halaman sebelumnya terlebih dahulu", Toast.LENGTH_LONG).show()
         }
 
     }
