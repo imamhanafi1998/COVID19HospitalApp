@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/user_c"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" />
+
+    <include android:id="@+id/login_layout"
+        android:visibility="visible"
+        layout="@layout/login" />
+
+    <include android:id="@+id/registration_layout"
+        android:visibility="gone"
+        layout="@layout/user_registration" />
+
+</RelativeLayout>
