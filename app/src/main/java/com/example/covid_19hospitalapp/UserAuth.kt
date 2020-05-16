@@ -23,14 +23,14 @@ class UserAuth : AppCompatActivity() {
 
         save.setOnClickListener {
             if (name.text.toString() == "" || password_register.text.toString() == "") {
-                Toast.makeText(this, "All fields are required", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Harap isi semua field", Toast.LENGTH_SHORT).show()
             } else {
                 if (handler.insertUserData(name.text.toString(), password_register.text.toString())) {
-                    Toast.makeText(this, "Register Success", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this, "Registrasi Sukses", Toast.LENGTH_SHORT).show()
                     name.text.clear()
                     password_register.text.clear()
                 } else {
-                    Toast.makeText(this, "Username exists!!!", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this, "Username tidak tersedia!!!", Toast.LENGTH_SHORT).show()
                     password_register.text.clear()
                 }
             }
@@ -38,16 +38,16 @@ class UserAuth : AppCompatActivity() {
 
         login_button.setOnClickListener {
             if (login_name.text.toString() == "" || login_password.text.toString() == "") {
-                Toast.makeText(this, "All fields are required", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Harap isi semua field", Toast.LENGTH_SHORT).show()
             } else {
                 if (handler.userPresent(login_name.text.toString(), login_password.text.toString())) {
-                    Toast.makeText(this, "Login Success", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this, "Login Sukses", Toast.LENGTH_SHORT).show()
                     login_name.text.clear()
                     login_password.text.clear()
                     val intentMain = Intent(this, MainActivity::class.java)
                     startActivity(intentMain)
                 } else {
-                    Toast.makeText(this, "Username or Password is incorrect", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this, "Username atau Password salah!!!", Toast.LENGTH_SHORT).show()
                     login_password.text.clear()
                 }
             }
