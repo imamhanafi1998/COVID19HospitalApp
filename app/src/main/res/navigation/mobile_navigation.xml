@@ -20,7 +20,7 @@
         <fragment
             android:id="@+id/nav_prevent"
             android:name="com.example.covid_19hospitalapp.ui.prevent.PreventFragment"
-            android:label="Pencegahan"
+            android:label="Cara Pencegahan"
             tools:layout="@layout/fragment_prevent" />
 
         <fragment

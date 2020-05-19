@@ -22,10 +22,10 @@ class SymptomFragment : Fragment() {
         symptomViewModel =
             ViewModelProviders.of(this).get(SymptomViewModel::class.java)
         val root = inflater.inflate(R.layout.fragment_symptom, container, false)
-        val textView: TextView = root.findViewById(R.id.text_symptom)
-        symptomViewModel.text.observe(this, Observer {
-            textView.text = it
-        })
+//        val textView: TextView = root.findViewById(R.id.text_symptom)
+//        symptomViewModel.text.observe(this, Observer {
+//            textView.text = it
+//        })
         return root
     }
 }

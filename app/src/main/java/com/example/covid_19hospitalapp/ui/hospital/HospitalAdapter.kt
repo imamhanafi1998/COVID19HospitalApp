@@ -23,6 +23,7 @@ class HospitalAdapter (val hospitalItemList: List<HospitalData>, val clickListen
     class PartViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         fun bind(hospital: HospitalData, clickListener: (HospitalData) -> Unit) {
             itemView.hospitalName.text = hospital.hospitalName.toString()
+            itemView.hospitalAddress.text = hospital.hospitalAddress.toString()
             itemView.hospitalPhoto.setImageResource(hospital.hospitalPhoto)
             itemView.setOnClickListener { clickListener(hospital) }
         }

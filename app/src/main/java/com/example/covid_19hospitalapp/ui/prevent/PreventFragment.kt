@@ -22,10 +22,10 @@ class PreventFragment : Fragment() {
         preventViewModel =
             ViewModelProviders.of(this).get(PreventViewModel::class.java)
         val root = inflater.inflate(R.layout.fragment_prevent, container, false)
-        val textView: TextView = root.findViewById(R.id.text_prevent)
-        preventViewModel.text.observe(this, Observer {
-            textView.text = it
-        })
+//        val textView: TextView = root.findViewById(R.id.text_prevent)
+//        preventViewModel.text.observe(this, Observer {
+//            textView.text = it
+//        })
         return root
     }
 }

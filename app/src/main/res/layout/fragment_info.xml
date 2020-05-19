@@ -1,19 +1,151 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/text_info"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/appName"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="COVID-19 Hospital App"
+                android:layout_marginHorizontal="36dp"
+                android:layout_marginTop="32dp"
+                android:textSize="18sp" />
+
+            <TextView
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/appName"
+                android:id="@+id/appDesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="36dp"
+                android:layout_marginTop="12dp"
+                android:text="Merupakan aplikasi berbasis mobile Android (Kotlin) yang dapat menampilkan beberapa informasi mengenai rumah sakit rujuan COVID-19 yang ada di provinsi Jawa Timur."
+                android:textSize="14sp" />
+
+            <TextView
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/appDesc"
+                android:id="@+id/appDesc2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="36dp"
+                android:layout_marginTop="12dp"
+                android:text="Aplikasi ini memuat banyak fungsi seperti menampilkan detil RS, menelpon RS, menampilkan RS dalam peta, bahkan menampilkan beberapa informasi seputar COVID-19 itu sendiri seperti gejala dan cara pencegahannya."
+                android:textSize="14sp" />
+
+            <TextView
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/appDesc2"
+                android:id="@+id/appDesc3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="36dp"
+                android:layout_marginTop="12dp"
+                android:text="Aplikasi ini dikembangkan oleh Akeno dan Sonhaji."
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/con1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/appDesc3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Akeno"
+                android:layout_marginHorizontal="36dp"
+                android:layout_marginTop="32dp"
+                android:textSize="18sp" />
+
+            <TextView
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/con1"
+                android:id="@+id/npm1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="36dp"
+                android:layout_marginTop="12dp"
+                android:text="NPM\t\t:\t\t17082010056"
+                android:textSize="14sp" />
+
+            <TextView
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/npm1"
+                android:id="@+id/nama1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="36dp"
+                android:layout_marginTop="12dp"
+                android:text="Nama\t\t:\t\tAchmad Fauzi"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/con2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/nama1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sonhaji"
+                android:layout_marginHorizontal="36dp"
+                android:layout_marginTop="32dp"
+                android:textSize="18sp" />
+
+            <TextView
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/con2"
+                android:id="@+id/npm2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="36dp"
+                android:layout_marginTop="12dp"
+                android:text="NPM\t\t:\t\t17082010032"
+                android:textSize="14sp" />
+
+            <TextView
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/npm2"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:id="@+id/nama2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="36dp"
+                android:layout_marginTop="12dp"
+                android:text="Nama\t\t:\t\tImam Hanafi"
+                android:layout_marginBottom="32dp"
+                android:textSize="14sp" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+
+
+
+<!--    <TextView-->
+<!--        android:id="@+id/text_info"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="8dp"-->
+<!--        android:layout_marginTop="8dp"-->
+<!--        android:layout_marginEnd="8dp"-->
+<!--        android:textAlignment="center"-->
+<!--        android:textSize="20sp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
 </androidx.constraintlayout.widget.ConstraintLayout>
