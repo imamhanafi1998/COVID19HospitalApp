@@ -32,7 +32,6 @@ class HospitalWeb : AppCompatActivity() {
             webView.settings.javaScriptEnabled = true
             webView.webViewClient = object  : WebViewClient() {
                 override fun onPageFinished(view: WebView?, url: String?) {
-//                    super.onPageFinished(view, url)
                     if (view != null) {
                         view.loadUrl("javascript:alert('Load selesai')")
                     }
@@ -45,7 +44,6 @@ class HospitalWeb : AppCompatActivity() {
                     message: String?,
                     result: JsResult?
                 ): Boolean {
-//                    return super.onJsAlert(view, url, message, result)
                     Toast.makeText(this@HospitalWeb, message, Toast.LENGTH_LONG).show()
                     if (result != null) {
                         result.confirm()
@@ -55,7 +53,7 @@ class HospitalWeb : AppCompatActivity() {
             }
             webView.loadUrl(hospitalWeb)
         } else {
-//            Toast.makeText(this@HospitalWeb, "Intent bug, harap kembali ke halaman sebelumnya terlebih dahulu", Toast.LENGTH_LONG).show()
+//            Intent has no ACTION_WEB_SEARCH
         }
 
     }

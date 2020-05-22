@@ -22,16 +22,8 @@ class HospitalDetailActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_hospital_detail)
         setSupportActionBar(toolbar)
-
-//        sss
-
-//        fab.setOnClickListener { view ->
-//            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-//                .setAction("Action", null).show()
-//        }
         supportActionBar?.setDisplayHomeAsUpEnabled(false)
 
-//        sss
         var intentThatStartedThisActivity = intent
         if (intentThatStartedThisActivity.hasExtra(Intent.EXTRA_COMPONENT_NAME)) {
             putData(intentThatStartedThisActivity)
@@ -50,9 +42,6 @@ class HospitalDetailActivity : AppCompatActivity() {
         hospitalPhotoDetail.setImageResource(photo)
         hospitalNameDetail.text = name
         hospitalAddressDetail.text = address
-//        hospitalContactDetail.text = contact
-//        hospitalWebDetail.text = web
-//        hospitalMapDetail.text = map
 
         buttonMap.setOnClickListener {
             openMap(mapLat, mapLong, name)

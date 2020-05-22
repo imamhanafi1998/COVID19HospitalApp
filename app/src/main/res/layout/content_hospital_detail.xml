@@ -17,77 +17,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
 
-<!--        <ImageView-->
-<!--            android:id="@+id/hospitalPhotoDetail"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="0dp"-->
-<!--            android:layout_marginHorizontal="72dp"-->
-<!--            android:layout_marginTop="32dp"-->
-<!--            app:layout_constraintDimensionRatio="H, 1:1"-->
-<!--            android:src="@drawable/ic_menu_gallery" />-->
-
-<!--        <TextView-->
-<!--            android:id="@+id/hospitalNameDetail"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:text="RS Dr. Soetomo"-->
-<!--            app:layout_constraintTop_toBottomOf="@id/hospitalPhotoDetail"-->
-<!--            app:layout_constraintStart_toStartOf="parent"-->
-<!--            app:layout_constraintEnd_toEndOf="parent"-->
-<!--            android:layout_marginHorizontal="36dp"-->
-<!--            android:layout_marginTop="32dp"-->
-<!--            android:textSize="18sp"-->
-<!--            android:ellipsize="end"-->
-<!--            android:maxLines="2" />-->
-
-<!--        <TextView-->
-<!--            android:id="@+id/hospitalAddressDetail"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:text="Kota Surabaya"-->
-<!--            app:layout_constraintTop_toBottomOf="@id/hospitalNameDetail"-->
-<!--            app:layout_constraintStart_toStartOf="parent"-->
-<!--            app:layout_constraintEnd_toEndOf="parent"-->
-<!--            android:layout_marginHorizontal="36dp"-->
-<!--            android:layout_marginTop="16dp"-->
-<!--            android:textSize="18sp" />-->
-
-<!--        <TextView-->
-<!--            android:id="@+id/hospitalContactDetail"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:text="03131319090"-->
-<!--            app:layout_constraintTop_toBottomOf="@id/hospitalAddressDetail"-->
-<!--            app:layout_constraintStart_toStartOf="parent"-->
-<!--            app:layout_constraintEnd_toEndOf="parent"-->
-<!--            android:layout_marginHorizontal="36dp"-->
-<!--            android:layout_marginTop="16dp"-->
-<!--            android:textSize="18sp" />-->
-
-<!--        <TextView-->
-<!--            android:id="@+id/hospitalWebDetail"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:text="Kota Surabaya"-->
-<!--            app:layout_constraintTop_toBottomOf="@id/hospitalContactDetail"-->
-<!--            app:layout_constraintStart_toStartOf="parent"-->
-<!--            app:layout_constraintEnd_toEndOf="parent"-->
-<!--            android:layout_marginHorizontal="36dp"-->
-<!--            android:layout_marginTop="16dp"-->
-<!--            android:textSize="18sp" />-->
-
-<!--        <TextView-->
-<!--            android:id="@+id/hospitalMapDetail"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:text="123-321"-->
-<!--            app:layout_constraintTop_toBottomOf="@id/hospitalWebDetail"-->
-<!--            app:layout_constraintStart_toStartOf="parent"-->
-<!--            app:layout_constraintEnd_toEndOf="parent"-->
-<!--            android:layout_marginHorizontal="36dp"-->
-<!--            android:layout_marginTop="16dp"-->
-<!--            android:textSize="18sp" />-->
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -146,15 +75,6 @@
                 android:layout_marginTop="32dp"
                 android:textSize="14sp" />
 
-<!--            <TextView-->
-<!--                android:id="@+id/hospitalContactDetail"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:layout_marginHorizontal="36dp"-->
-<!--                android:layout_marginTop="6dp"-->
-<!--                android:text="03131319090"-->
-<!--                android:textSize="18sp" />-->
-
             <Button
                 android:id="@+id/buttonCall"
                 android:layout_width="wrap_content"
@@ -171,16 +91,6 @@
                 android:layout_marginHorizontal="36dp"
                 android:layout_marginTop="32dp"
                 android:textSize="14sp" />
-
-<!--            <TextView-->
-<!--                android:id="@+id/hospitalWebDetail"-->
-<!--                android:layout_width="wrap_content"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:layout_marginHorizontal="36dp"-->
-<!--                android:layout_marginTop="6dp"-->
-<!--                android:text="https://example.com/"-->
-<!--                android:textColor="#FFFFFF"-->
-<!--                android:textSize="18sp" />-->
 
             <Button
                 android:id="@+id/buttonWeb"
@@ -199,17 +109,6 @@
                 android:layout_marginTop="32dp"
                 android:textSize="14sp" />
 
-<!--            <TextView-->
-<!--                android:id="@+id/hospitalMapDetail"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:layout_marginHorizontal="36dp"-->
-<!--                android:layout_marginTop="6dp"-->
-<!--                android:textColor="#FFFFFF"-->
-<!--                android:text="123-321"-->
-<!--                android:textSize="18sp"-->
-<!--                android:layout_marginBottom="32dp" />-->
-
             <Button
                 android:id="@+id/buttonMap"
                 android:layout_width="wrap_content"
@@ -223,79 +122,5 @@
         </LinearLayout>
 
     </ScrollView>
-
-<!--    <ImageView-->
-<!--        android:id="@+id/hospitalPhotoDetail"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="0dp"-->
-<!--        android:layout_marginHorizontal="72dp"-->
-<!--        android:layout_marginTop="32dp"-->
-<!--        app:layout_constraintDimensionRatio="H, 1:1"-->
-<!--        app:layout_constraintTop_toTopOf="parent"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        android:src="@drawable/ic_menu_gallery" />-->
-
-<!--    <TextView-->
-<!--        android:id="@+id/hospitalNameDetail"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:text="RS Dr. Soetomo"-->
-<!--        app:layout_constraintTop_toBottomOf="@id/hospitalPhotoDetail"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        android:layout_marginHorizontal="36dp"-->
-<!--        android:layout_marginTop="32dp"-->
-<!--        android:textSize="18sp"-->
-<!--        android:ellipsize="end"-->
-<!--        android:maxLines="2" />-->
-
-<!--    <TextView-->
-<!--        android:id="@+id/hospitalAddressDetail"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:text="Kota Surabaya"-->
-<!--        app:layout_constraintTop_toBottomOf="@id/hospitalNameDetail"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        android:layout_marginHorizontal="36dp"-->
-<!--        android:layout_marginTop="16dp"-->
-<!--        android:textSize="18sp" />-->
-
-<!--    <TextView-->
-<!--        android:id="@+id/hospitalContactDetail"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:text="03131319090"-->
-<!--        app:layout_constraintTop_toBottomOf="@id/hospitalAddressDetail"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        android:layout_marginHorizontal="36dp"-->
-<!--        android:layout_marginTop="16dp"-->
-<!--        android:textSize="18sp" />-->
-
-<!--    <TextView-->
-<!--        android:id="@+id/hospitalWebDetail"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:text="Kota Surabaya"-->
-<!--        app:layout_constraintTop_toBottomOf="@id/hospitalContactDetail"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        android:layout_marginHorizontal="36dp"-->
-<!--        android:layout_marginTop="16dp"-->
-<!--        android:textSize="18sp" />-->
-
-<!--    <TextView-->
-<!--        android:id="@+id/hospitalMapDetail"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:text="123-321"-->
-<!--        app:layout_constraintTop_toBottomOf="@id/hospitalWebDetail"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        android:layout_marginHorizontal="36dp"-->
-<!--        android:layout_marginTop="16dp"-->
-<!--        android:textSize="18sp" />-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>

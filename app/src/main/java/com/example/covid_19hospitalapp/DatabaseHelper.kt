@@ -18,7 +18,7 @@ class DatabaseHelper  (context: Context) : SQLiteOpenHelper(context, dbname, fac
 
     fun insertUserData(name: String, password: String): Boolean {
         val db :SQLiteDatabase = writableDatabase
-        val values : ContentValues = ContentValues()
+        val values = ContentValues()
         values.put("name", name)
         values.put("password", password)
 

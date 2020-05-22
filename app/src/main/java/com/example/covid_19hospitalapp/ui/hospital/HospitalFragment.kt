@@ -5,32 +5,19 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
-import android.widget.Toast
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.Observer
-import androidx.lifecycle.ViewModelProviders
 import com.example.covid_19hospitalapp.R
-import kotlinx.android.synthetic.main.activity_main.*
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
 class HospitalFragment : Fragment() {
-
-    private lateinit var hospitalViewModel: HospitalViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        hospitalViewModel =
-            ViewModelProviders.of(this).get(HospitalViewModel::class.java)
         val root = inflater.inflate(R.layout.fragment_hospital, container, false)
-//        val textView: TextView = root.findViewById(R.id.text_hospital)
-//        hospitalViewModel.text.observe(this, Observer {
-//            textView.text = it
-//        })
         val testData = createHospitalData()
         root.findViewById<RecyclerView>(R.id.hospitalListRV).layoutManager = LinearLayoutManager(context)
         root.findViewById<RecyclerView>(R.id.hospitalListRV).setHasFixedSize(true)
@@ -61,16 +48,6 @@ class HospitalFragment : Fragment() {
         partList.add(HospitalData(R.drawable.rs7, "RSUD Dr R. Sosodoro Djatikoesoemo Bojonegoro", "Kabupaten Bojonegoro", "03533412133", "https://www.rssosodoro.com/", "-7.159506", "111.899632"))
         partList.add(HospitalData(R.drawable.rs8, "RSUD Dr. Iskak Kab. Tulungagung", "Kabupaten Tulungagung", "0355322609", "https://rsudtulungagung.com/", "-8.054871", "111.918112"))
         partList.add(HospitalData(R.drawable.rs9, "RSUD Dr.Soedono Madiun", "Kota Madiun", "0351454657", "https://rssoedono.jatimprov.go.id/", "-7.626299", "111.524001"))
-        // "-7.268021", "112.758500"
-        // "-7.270191", "112.786139"
-        // "-7.465429", "112.716379"
-        // "-7.972562", "112.631550"
-        // "-7.759709", "112.176110"
-        // "-6.898737", "112.046514"
-        // "-7.159506", "111.899632"
-        // "-8.054871", "111.918112"
-        // "-7.626299", "111.524001"
-        
         return partList
     }
 }
